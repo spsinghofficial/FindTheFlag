@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FindTheFlag</string>
+    <string name="title_activity_my_game">Find The Flag</string>
+</resources>

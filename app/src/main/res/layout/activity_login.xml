@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flagrun.Login"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+    <EditText android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter name"
+        android:id="@+id/name"/>
+    <EditText android:layout_width="match_parent"
+        android:hint="Enter phone"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:id="@+id/phone"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Select Team"/>
+<RadioGroup android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/radioGroup">
+    <RadioButton android:layout_width="wrap_content"
+        android:text="Team A"
+        android:layout_height="wrap_content"
+        android:id="@+id/teanARadioButton"/>
+    <RadioButton android:layout_width="wrap_content"
+        android:text="Team B"
+        android:layout_height="wrap_content"
+        android:id="@+id/teanBRadioButton"/>
+</RadioGroup>
+
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Save"
+        android:id="@+id/submit"/>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flagrun.MyGame"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/border"
+    android:padding="20dp">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:text="Prison"/>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:background="@drawable/border_outside">
+            <LinearLayout android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_width="0dp">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:contentDescription="You"
+                    android:foregroundGravity="bottom"
+                    android:src="@android:drawable/star_on"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="top|center"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="top"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/teamTV"
+                    android:text="Team A"/>
+                <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Flag"
+                    android:textAllCaps="false"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/pickFlag"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:text="Prison"/>
+
+    </LinearLayout>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:context="com.android.findtheflag.com.flagrun.findtheflag.MyGame" />
+
+</LinearLayout>
+
+

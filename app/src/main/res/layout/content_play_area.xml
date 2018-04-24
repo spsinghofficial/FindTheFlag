@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flagrun.PlayAreaActivity"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:padding="20dp">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:text="Prison"/>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:background="@drawable/border_outside">
+            <LinearLayout android:layout_weight="0.46"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                >
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:contentDescription="You"
+                    android:foregroundGravity="bottom"
+                    android:src="@android:drawable/star_on"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="top|center"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="top"
+                    android:textSize="16sp"
+                    android:text="Team A"/>
+
+            </LinearLayout>
+            <View android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="0.01"
+                android:background="@color/colorPrimary"/>
+            <LinearLayout android:layout_weight="0.45"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_width="0dp">
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:contentDescription="You"
+                    android:foregroundGravity="bottom"
+                    android:src="@android:drawable/star_on"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="top|center"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="top"
+                    android:textSize="16sp"
+                    android:text="Team A"/>
+            </LinearLayout>
+       </LinearLayout>
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:text="Prison"/>
+
+    </LinearLayout>
+
+</LinearLayout>
